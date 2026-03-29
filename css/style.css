@@ -1,0 +1,138 @@
+body {
+  font-family: Arial;
+  transition: 0.3s;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #1b1f29;
+  color: white;
+}
+
+/* Navbar Dark */
+.dark-mode .navbar {
+  background-color: #2a2a2a !important;
+}
+
+/* Sections */
+section {
+  padding: 80px 0;
+}
+
+/* Cards Animation */
+.card {
+  transition: 0.3s;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Button hover */
+.btn:hover {
+  transform: scale(1.1);
+}
+
+/* Back to top */
+#topBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+
+/* Hero */
+.hero {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, #1b1f29, #4d5b49);
+  color: white;
+}
+/* Fix Why Choose Us in Dark Mode */
+.dark-mode .bg-light {
+  background-color: #2a2a2a !important;
+  color: white !important;
+}
+/* Navbar Dark Mode */
+.dark-mode .navbar {
+  background-color: #2a2a2a !important;
+}
+
+.dark-mode .navbar .nav-link,
+.dark-mode .navbar .navbar-brand {
+  color: white !important;
+}
+
+.dark-mode .navbar .nav-link:hover {
+  color: #4d5b49 !important;
+}
+/* Dark Mode Background كامل */
+.dark-mode {
+  background-color: #1b1f29;
+  color: white;
+}
+
+/* نخلي كل السكاشن نفس اللون */
+.dark-mode section {
+  background-color: #1b1f29 !important;
+}
+
+/* أي bg-light يتلغى */
+.dark-mode .bg-light {
+  background-color: #1b1f29 !important;
+}
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fa;
+}
+
+/* Dark Mode Hero */
+.dark-mode .hero {
+  background-color: #1b1f29;
+}
+
+/* Title */
+.hero h1 {
+  font-size: 60px;
+}
+
+/* Animation بسيطة */
+.hero img {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.hero img {
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+#darkBtn {
+  border-radius: 20px;
+  padding: 6px 15px;
+}
+
+.dark-mode #darkBtn {
+  background-color: white;
+  color: black;
+}
+/* زرار المينيو في الدارك مود */
+.dark-mode .navbar-toggler {
+  border-color: white;
+}
+
+/* الأيقونة نفسها (الـ 3 شرط) */
+.dark-mode .navbar-toggler-icon {
+  filter: invert(1);
+}
